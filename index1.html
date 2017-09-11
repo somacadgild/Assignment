@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<body>
+	<p id="pp">Hello This is a paragraph</p>
+
+    <button type="button" onclick="mychange()">click me to change the text</button>
+   
+    <button type="button" onclick="hide()">hide me</button>
+    <button type="button" onclick="showme()">show me</button>
+     <button type="button" onclick="changecolor()">change color </button>
+
+     <button type="button" onclick="setColor()">click meee</button>
+
+     <FORM> 
+<INPUT type="button" value="Change to Yellow!" name="button3" onClick="document.bgColor='yellow'"> <br> 
+<INPUT type="button" value="Change to Red!" name="button4" onClick="document.bgColor='red'"> <br> 
+<INPUT type="button" value="Change back!" name="button5" onClick="document.bgColor='white'"> </FORM>
+	<script>
+      function mychange()
+      {
+      	//function are of many types in JS how we can do is to write down the function keyword and followed by function name with parathesis . or we can say that it is a function expression. 
+
+      	//we need to change the p text 
+        //so to do so what we have to do ? 
+        //tell me ?
+         document.getElementById('pp').innerHTML="Hello JS";
+    
+          
+
+      };
+
+       function hide()
+       {
+
+       	document.getElementById('pp').style.display="none";
+       };
+
+
+     function showme()
+     {
+     	document.getElementById('pp').style.display="block";
+     }
+
+
+     function changecolor()
+     {
+         document.getElementById('pp').style.color="red";
+        document.getElementById('pp').style.fontSize="42px";
+
+      
+     };
+
+        //toggle button if i click on that it will give me red color if i click again it will give the default color some condition 
+        //simple if 
+
+        var count = 1;
+    function setColor(btn, color) {
+        var property = document.getElementById(btn);
+        if (count == 0) {
+            property.style.backgroundColor = "#FFFFFF"
+            count = 1;        
+        }
+        else {
+            property.style.backgroundColor = "#7FFF00"
+            count = 0;
+        }
+    }
+
+      
+
+
+	</script>
+</body>
+</html>

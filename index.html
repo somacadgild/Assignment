@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SVG</title>
+</head>
+<body>
+  <h1>SVG Example</h1>	
+   
+ <svg width="400px" height="200px" style="border:2px solid black;position: absolute; top: 200px; left: 200px;">
+
+  	<react id="react1" x="0" y="0" width="50" height="50" fill="red" transform="rotate(45)" >
+  	</react>
+
+  </svg>
+   <script>
+     var rect1=document.getElementById("react1");
+     var reqID,x=0;
+        //var d=0;
+      function animate()
+      {
+
+      //x++;//each time the animate function runs so it will keep on running 60 frames per sec.
+
+
+      //rect1.setAttribute('x',x);//attribute name is x and value we get dynamic value is x value .
+      //rect1.x.baseVal.value+=2.0;
+  // reqID=window.requestAnimationFrame('transform','rotate('+d+')');
+
+      reqID=window.requestAnimationFrame(animate);//this method will make the animation func keep running in loop.
+
+
+
+  };
+     reqID=window.requestAnimationFrame(animate);
+
+
+   </script>
+
+</body>
+</html>

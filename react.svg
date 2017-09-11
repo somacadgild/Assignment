@@ -1,0 +1,6 @@
+<svg width="400px" height="200px" style="border:2px solid black;position: absolute; top: 200px; left: 200px;">
+
+  	<react id="react1" x="0" y="0" width="50" height="50" fill="red" transform="rotate(45)" >
+  	</react>
+
+  </svg>

@@ -1,0 +1,21 @@
+<button id="btn1">Click me 1</button>
+<button id="btn2">Click me 2</button>
+<button id="btn3">Click me 3</button>
+
+
+
+<script>
+	
+function init(){
+    alert("document loaded");
+}
+window.addEventListener( "load", init, false );
+
+function clickHandler(event){
+    alert( "you clicked " + event.target.id );
+}
+btn1.addEventListener( "click", clickHandler );
+btn2.addEventListener( "click", clickHandler );
+btn3.addEventListener( "click", clickHandler );
+
+</script>
